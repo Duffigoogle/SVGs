@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(226, 230, 234);
+}
+header .logo_box {
+  margin-left: 80px;
+}
+header .logo_box .logo_svg {
+  width: 180px;
+}
+header .nav_box {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+header .nav_box .nav_items {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  margin: 0 15px;
+}
+header .nav_box .nav_items:hover {
+  color: rgb(41, 128, 227);
+}
+header .nav_box .search_box {
+  display: flex;
+  align-items: center;
+}
+header .nav_box .search_box .search_btn {
+  margin: 0 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+header .nav_box .search_box .reg_btn {
+  background-color: rgb(10, 70, 253);
+  padding: 0.63rem 1.25rem;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+header .nav_box .hamburger_menu {
+  display: none;
+}
+header .nav_box .hamburger_menu .hamburger_line {
+  height: 5px;
+  width: 25px;
+  background-color: #000;
+  margin: 3px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  header .logo_box {
+    margin-left: 20px;
+  }
+  header .logo_box .logo_svg {
+    width: 180px;
+  }
+  header .nav_box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  header .nav_box .nav_items {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0 15px;
+  }
+  header .nav_box .nav_items:hover {
+    color: rgb(41, 128, 227);
+  }
+  header .nav_box .search_box {
+    display: flex;
+    align-items: center;
+  }
+  header .nav_box .search_box .search_btn {
+    margin: 0 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  header .nav_box .search_box .reg_btn {
+    background-color: rgb(10, 70, 253);
+    padding: 0.63rem 1.25rem;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  header .nav_box .hamburger_menu {
+    display: none;
+  }
+  header .nav_box .hamburger_menu .hamburger_line {
+    height: 5px;
+    width: 25px;
+    background-color: #000;
+    margin: 3px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 425px) {
+  header {
+    width: 100vw;
+  }
+  header .logo_box {
+    margin-left: 8px;
+  }
+  header .logo_box .logo_svg {
+    width: 70%;
+  }
+  header .nav_box {
+    margin-right: 8px;
+  }
+  header .nav_box nav {
+    display: none;
+  }
+  header .nav_box .search_box .search_btn {
+    margin: 10px;
+  }
+  header .nav_box .search_box .reg_btn {
+    width: 120px;
+  }
+  header .nav_box .hamburger_menu {
+    display: block;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .nav_box .search_box {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

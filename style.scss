@@ -1,0 +1,205 @@
+$bg_color1: rgb(226, 230, 234);
+$btn_bgColor: rgb(10, 70, 253);
+$hover_color: rgb(41, 128, 227);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: $bg_color1;
+    // padding: 0 80px;
+
+    .logo_box {
+        margin-left: 80px;
+
+        .logo_svg {
+            width: 180px;
+        }
+    }
+
+    .nav_box {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+
+        .nav_items {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            margin: 0 15px;
+
+            &:hover {
+                color: $hover_color;
+            }
+        }
+
+        .search_box {
+            display: flex;
+            align-items: center;
+
+            .search_btn {
+                margin: 0 40px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+            .reg_btn {
+                background-color: $btn_bgColor;
+                padding: 0.63rem 1.25rem;
+                border: none;
+                color: #fff;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }
+
+        .hamburger_menu {
+            display: none;
+
+            .hamburger_line {
+                height: 5px;
+                width: 25px;
+                background-color: #000;
+                margin: 3px;
+                cursor: pointer;
+
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+      
+        .logo_box {
+            margin-left: 20px;
+    
+            .logo_svg {
+                width: 180px;
+            }
+        }
+    
+        .nav_box {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+    
+            .nav_items {
+                text-decoration: none;
+                color: #000;
+                font-size: 1.2rem;
+                margin: 0 15px;
+    
+                &:hover {
+                    color: $hover_color;
+                }
+                
+            }
+    
+            .search_box {
+                display: flex;
+                align-items: center;
+    
+                .search_btn {
+                    margin: 0 40px;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+    
+                .reg_btn {
+                    background-color: $btn_bgColor;
+                    padding: 0.63rem 1.25rem;
+                    border: none;
+                    color: #fff;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+            }
+    
+            .hamburger_menu {
+                display: none;
+    
+                .hamburger_line {
+                    height: 5px;
+                    width: 25px;
+                    background-color: #000;
+                    margin: 3px;
+                    cursor: pointer;
+    
+    
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    header {
+        width: 100vw;
+
+        .logo_box {
+            margin-left: 8px;
+
+            .logo_svg {
+                width: 70%;
+            }
+        }
+
+        .nav_box {
+            margin-right: 8px;
+
+            nav {
+                display: none;
+            }
+
+            .search_box {
+
+                .search_btn {
+                    margin: 10px;
+                }
+    
+                .reg_btn {
+                    width: 120px;
+                }
+            }
+            
+
+            .hamburger_menu {
+                display: block;
+                margin-left: 10px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        .logo_box {
+            .logo_svg {
+                // width: 180px;
+            }
+        }
+    
+        .nav_box {
+        
+            .search_box {
+                display: none;
+              
+            }
+    
+        }
+    }
+}
